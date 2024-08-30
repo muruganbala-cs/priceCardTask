@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Cards = ({ details }) => {
   return (
     <>
-      <div className="col">
+      <div className="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
         <div className="col">
           <div className="card mb-5">
             <div className="card-body">
@@ -16,11 +16,11 @@ const Cards = ({ details }) => {
               </h5>
               <h6 className="card-price text-center">
                 ${details.price}
-                <span class="period">/month</span>
+                <span className="period">/month</span>
               </h6>
               <hr />
               <ul className="fa-ul">
-                {details.features.map((feature) => {
+                {details.features.map((feature) => {  
                   return (
                     <li className={feature.enable ? "" : "text-muted"}>
                       <span className="fa-li">
